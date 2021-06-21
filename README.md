@@ -1,7 +1,7 @@
 # 8Queens_HillClimbing
 The meta-algorithm random-restart/shotgun hill climbing approach is implemeted on top of the hill climbing algorithm.
 
-The topic that I have chosen is the 8 Queens problem (10th question) using hill climbing method. The method used here is actually called the random-restart hill climbing or the shotgun hill climbing algorithm. The outputs for both algorithms are shown independently and the methods for both of them are made separately too, with slight changes between them. 
+The topic that I have chosen is the 8 Queens problem using hill climbing approach. The method used here is actually called the random-restart hill climbing or the shotgun hill climbing algorithm. The outputs for both algorithms are shown independently and the methods for both of them are made separately too, with slight changes between them. 
 
 The 8 Queen problem requires the queens to be placed in such an order that no queen threatens or is in the line of attack of the others. (Queens threaten each other when in the same row, column or diagonal.) This means that each queen needs to be placed in a separate row, separate column and separate diagonal.
 
