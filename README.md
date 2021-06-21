@@ -1,2 +1,16 @@
 # 8Queens_HillClimbing
 The meta-algorithm random-restart/shotgun hill climbing approach is implemeted on top of the hill climbing algorithm.
+
+The topic that I have chosen is the 8 Queens problem (10th question) using hill climbing method. The method used here is actually called the random-restart hill climbing or the shotgun hill climbing algorithm. The outputs for both algorithms are shown independently and the methods for both of them are made separately too, with slight changes between them. 
+
+The 8 Queen problem requires the queens to be placed in such an order that no queen threatens or is in the line of attack of the others. (Queens threaten each other when in the same row, column or diagonal.) This means that each queen needs to be placed in a separate row, separate column and separate diagonal.
+
+The problem is solved by using a modified hill climbing approach. The hill climbing method is exactly what it is named after. It works basically like going to the top of a mountain in thick fog at night. One just keeps moving upwards until they arrive at a peak/flat or plateau.
+
+There are other methods to perform this task like backtracking but hill climbing optimizes the cost and gives a solution quicker. Hill climbing also doesn’t require to store the previous states, which saves memory. Although using the hill climbing approach alone gives results which can be the local maxima or a plateau. It is like standing at a peak of the mountain although there can a peak which is much higher and better. So, to avoid this local maximum and reach the global maxima we use a slightly modified approach which is called the random restart or the shotgun hill climbing algorithm.
+
+The hill climbing algorithm uses a heuristics approach and works by choosing the steepest path and discarding all other values, this results in the solution being the local maxima most of the time. So, this meta-algorithm built on top of the hill climbing algorithm is used. It iteratively does hill climbing, each time with a random initial condition and the result of an iteration is stored separately. If the next iteration gives better results, the old stored state is replaced with the current state. Random-restart hill climbing is a surprisingly effective algorithm in many cases. It turns out that it is often better to spend CPU time exploring the space, than carefully optimizing from an initial condition.
+
+The relative simplicity of the algorithm makes it a popular first choice amongst optimizing algorithms. It is used widely in artificial intelligence, for reaching a goal state from a starting node. Hill climbing can often produce a better result than other algorithms when the amount of time available to perform a search is limited, such as with real-time systems, so long as a small number of increments typically converges on a good solution (the optimal solution or a close approximation). Hill climbing is an anytime algorithm, it can return a valid solution even if it's interrupted at any time before it ends. 
+
+The methods used for this problem, if interrupted at any time, give the “best results so far”. Therefore, the time complexity is O(∞). Traditional time complexity notions do not make sense for heuristics. 
